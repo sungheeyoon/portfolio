@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from "react-bootstrap";
+import GlobalStyle from "../styles/GlobalStyles";
 
 const IntroduceContainer = styled.div`
   font-size: 20px;
@@ -12,6 +13,7 @@ const HomeContainer = styled.div`
 const Home = () => {
   return (
     <>
+      <GlobalStyle />
       <HomeContainer>
         <h2>
           Hi There! <br />

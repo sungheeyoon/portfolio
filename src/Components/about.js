@@ -9,7 +9,6 @@ import {
 
 const AboutContainer = styled.div`
   padding: 130px 0;
-  background-color: grey;
 `;
 const AboutTitle = styled.div`
   display: flex;
