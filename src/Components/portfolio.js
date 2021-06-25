@@ -3,23 +3,31 @@ import styled from "styled-components";
 
 const Cards = styled.div`
   display: flex;
+  justify-content: center;
 `;
 const BtnPosition = styled.div`
   position: absolute;
-  right: 20px;
-  bottom: 99px;
+  right: 6%;
+  bottom: 9%;
 `;
 const Portfolio = () => {
   return (
     <>
-      <Container>
-        <div>
+      <Container style={{ padding: "70px" }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
           <h2>Portfolio</h2>
           <p>See My Works - Lorem ipsum dolor</p>
         </div>
         <div>
           <Cards>
-            <Card style={{ width: "18rem" }}>
+            <Card style={{ width: "30rem", margin: "40px" }}>
               <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>
@@ -39,7 +47,7 @@ const Portfolio = () => {
                 <Card.Text>Toy project by cloning Twitter</Card.Text>
               </Card.Body>
             </Card>
-            <Card style={{ width: "18rem" }}>
+            <Card style={{ width: "30rem", margin: "40px" }}>
               <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>
@@ -62,9 +70,12 @@ const Portfolio = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
+          </Cards>
+          <Cards>
             <Card
               style={{
-                width: "18rem",
+                width: "30rem",
+                margin: "40px",
               }}
             >
               <Card.Img variant="top" src="holder.js/100px180" />
@@ -87,7 +98,7 @@ const Portfolio = () => {
                 <Card.Text>Todo list using Vanilla Javascript</Card.Text>
               </Card.Body>
             </Card>
-            <Card style={{ width: "18rem" }}>
+            <Card style={{ width: "30rem", margin: "40px" }}>
               <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>

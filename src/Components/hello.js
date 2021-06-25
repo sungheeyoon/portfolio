@@ -24,6 +24,7 @@ const HeaderTitle = styled.h1`
   font-size: 80px;
   margin-bottom: 40px;
 `;
+
 const Hello = () => {
   return (
     <>
