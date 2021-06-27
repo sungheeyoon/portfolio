@@ -2,11 +2,6 @@ import styled from "styled-components";
 import { Button } from "react-bootstrap";
 import GlobalStyle from "../styles/GlobalStyles";
 
-const IntroduceContainer = styled.div`
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 1.5em;
-`;
 const HomeContainer = styled.div`
   background-color: #252934;
   color: white;
@@ -32,7 +27,7 @@ const Hello = () => {
       <HomeContainer>
         <HeaderTitle>
           Hi There! I'm <Highlight>Jack</Highlight>. <br />
-          I'm Web Developer.
+          I'm a Web Developer.
         </HeaderTitle>
 
         <Button variant="outline-light" size="lg">

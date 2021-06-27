@@ -19,15 +19,23 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const AboutContainer = styled.div`
-  padding: 130px 0;
+  margin: 100px;
+  height: 100vh;
+  width: 100wh;
 `;
 const AboutTitle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 `;
-
+const IconBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+`;
 const ControlledCarousel = () => {
   const [index, setIndex] = useState(0);
 
@@ -61,63 +69,102 @@ const About = () => {
   return (
     <AboutContainer>
       <AboutTitle>
-        <h2>About Me</h2>
+        <h1>About Me</h1>
         <p>Professional Profile - There Is All About Me</p>
       </AboutTitle>
       {/* image insert*/}
-      <div>
-        <h3>I'm Jack</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-          assumenda, voluptas nostrum quasi eaque modi voluptatibus sed enim
-          rem? Itaque veritatis eligendi, magnam doloremque vitae temporibus
-          quae error odit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-          assumenda, voluptas nostrum quasi eaque modi voluptatibus sed enim
-          rem? Itaque veritatis eligendi, magnam doloremque vitae temporibus
-          quae error odit.
-        </p>
-        <ul>
-          <li>
-            <FontAwesomeIcon icon={faMapMarkerAlt} className="search" />
-            <b>Addres :</b> Inchoen,Korea
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faPhoneAlt} className="search" />
-            <b>Phone :</b> 010-4131-2898
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faCalendarDay} className="search" />
-            <b>Date of birth :</b> 17 november 1992
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faEnvelope} className="search" />
-            <b>Email :</b> torushy@gmail.com
-          </li>
-        </ul>
-      </div>
-      <div>
-        <div>
-          <h3>
-            <FontAwesomeIcon icon={faGraduationCap} className="search" />
-            EDUCATION
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <div style={{ width: "50%" }}>
+          <h3 style={{ textAlign: "center", marginBottom: "20px" }}>
+            I'm Jack
+            <br />
           </h3>
-
-          <ControlledCarousel />
+          <p style={{ fontSize: "20px" }}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            assumenda, voluptas nostrum quasi eaque modi voluptatibus sed enim
+            rem? Itaque veritatis eligendi, magnam doloremque vitae temporibus
+            quae error odit.
+          </p>
+          <p style={{ fontSize: "20px" }}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            assumenda, voluptas nostrum quasi eaque modi voluptatibus sed enim
+            rem? Itaque veritatis eligendi, magnam doloremque vitae temporibus
+            quae error odit.
+          </p>
+          <p style={{ fontSize: "20px" }}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+            assumenda, voluptas nostrum quasi eaque modi voluptatibus sed enim
+            rem? Itaque veritatis eligendi, magnam doloremque vitae temporibus
+            quae error odit.
+          </p>
+          <ul>
+            <li>
+              <FontAwesomeIcon icon={faMapMarkerAlt} className="search" />
+              <b>Addres :</b> Inchoen,Korea
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faPhoneAlt} className="search" />
+              <b>Phone :</b> 010-4131-2898
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faCalendarDay} className="search" />
+              <b>Date of birth :</b> 17 november 1992
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faEnvelope} className="search" />
+              <b>Email :</b> torushy@gmail.com
+            </li>
+          </ul>
         </div>
         <div>
-          <h3>
-            <FontAwesomeIcon icon={faStar} className="search" />
-            MY SKILLS
-          </h3>
+          <div style={{ marginBottom: "100px" }}>
+            <h3>
+              <FontAwesomeIcon icon={faGraduationCap} />
+              EDUCATION
+            </h3>
 
-          <FontAwesomeIcon icon={faHtml5} size={"5x"} color={"grey"} />
-          <FontAwesomeIcon icon={faCss3Alt} size={"5x"} color={"grey"} />
-          <FontAwesomeIcon icon={faJs} size={"5x"} color={"grey"} />
-          <FontAwesomeIcon icon={faReact} size={"5x"} color={"grey"} />
-          <FontAwesomeIcon icon={faGitAlt} size={"5x"} color={"grey"} />
+            <ControlledCarousel />
+          </div>
+          <div>
+            <h3>
+              <FontAwesomeIcon icon={faStar} />
+              MY SKILLS
+            </h3>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <IconBox>
+                <FontAwesomeIcon icon={faHtml5} size={"5x"} color={"grey"} />
+                <p>HTML5</p>
+              </IconBox>
+              <IconBox>
+                <FontAwesomeIcon icon={faCss3Alt} size={"5x"} color={"grey"} />
+                <p>CSS3</p>
+              </IconBox>
+              <IconBox>
+                <FontAwesomeIcon icon={faJs} size={"5x"} color={"grey"} />
+                <p>JavaScript + ES6</p>
+              </IconBox>
+              <IconBox>
+                <FontAwesomeIcon icon={faReact} size={"5x"} color={"grey"} />
+                <p>REACT</p>
+              </IconBox>
+              <IconBox>
+                <FontAwesomeIcon icon={faGitAlt} size={"5x"} color={"grey"} />
+                <p>GIT</p>
+              </IconBox>
+            </div>
+          </div>
         </div>
       </div>
     </AboutContainer>

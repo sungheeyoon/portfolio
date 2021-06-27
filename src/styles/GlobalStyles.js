@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
         box-sizing:border-box;
     }
     body{
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: termina, sans-serif;;
         font-size:12px;
     
     

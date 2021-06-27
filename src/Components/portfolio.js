@@ -22,7 +22,7 @@ const Portfolio = () => {
             flexDirection: "column",
           }}
         >
-          <h2>Portfolio</h2>
+          <h1>Portfolio</h1>
           <p>See My Works - Lorem ipsum dolor</p>
         </div>
         <div>

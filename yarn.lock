@@ -1303,6 +1303,22 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@font-face/browser@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@font-face/browser/-/browser-1.0.2.tgz#d2f8843734bae5d90eb2e0813c501704addbc2af"
+  integrity sha512-A/uLmqPsGw8bVYwqOw5FHZHkYpXqelMCfrDrP85MO9V8GGwukbDskaqB20BGO9//IRhbUomXNdfBfZEo9Rg8Rw==
+  dependencies:
+    "@font-face/core" "^1.0.0"
+
+"@font-face/core@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@font-face/core/-/core-1.0.1.tgz#79b0fe26e588f2783e1237a448af429be0aa761c"
+  integrity sha512-Hsr6pNZ6O4WHjI6Bm6Mu7lcbW/1YBwiHMUlwlx8Ukbtt0PwXOK/zdu/GOfj+3QOe+NvpBZU/wl2fDWiXS0Ns2g==
+  dependencies:
+    arrify "^2.0.1"
+    is-function "^1.0.1"
+    isobject "^4.0.0"
+
 "@fortawesome/fontawesome-common-types@^0.2.35":
   version "0.2.35"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.35.tgz#01dd3d054da07a00b764d78748df20daf2b317e9"
@@ -6201,6 +6217,11 @@ is-fullwidth-code-point@^3.0.0:
   resolved "https://registry.yarnpkg.com/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz#f116f8064fe90b3f7844a38997c0b75051269f1d"
   integrity sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==
 
+is-function@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/is-function/-/is-function-1.0.2.tgz#4f097f30abf6efadac9833b17ca5dc03f8144e08"
+  integrity sha512-lw7DUp0aWXYg+CBCN+JKkcE0Q2RayZnSvnZBlwgxHBQhqt5pZNVy4Ri7H9GmmXkdu7LUthszM+Tor1u/2iBcpQ==
+
 is-generator-fn@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-generator-fn/-/is-generator-fn-2.1.0.tgz#7d140adc389aaf3011a8f2a2a4cfa6faadffb118"
@@ -6383,6 +6404,11 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
+
+isobject@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/isobject/-/isobject-4.0.0.tgz#3f1c9155e73b192022a80819bacd0343711697b0"
+  integrity sha512-S/2fF5wH8SJA/kmwr6HYhK/RI/OkhD84k8ntalo0iJjZikgq1XFvR5M8NPT1x5F7fBwCG3qHfnzeP/Vh/ZxCUA==
 
 isstream@~0.1.2:
   version "0.1.2"
@@ -7198,7 +7224,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-"lodash@>=3.5 <5", lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.5:
+"lodash@>=3.5 <5", lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.4, lodash@^4.17.5:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -9036,7 +9062,7 @@ prop-types-extra@^1.1.0:
     react-is "^16.3.2"
     warning "^4.0.0"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -9388,6 +9414,14 @@ react-transition-group@^4.4.1:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
+
+react-typekit@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/react-typekit/-/react-typekit-1.1.4.tgz#1305675bd8d348eeafc53f013edf1ec164b01f73"
+  integrity sha512-8RyqqRsfzQnTmVWX++GTGexIKs6sGQbgDGvajV3kNRUW7gB+pJG2NRTU8lnHgjsIhIGprlYlIsWi09mY3zm2Ug==
+  dependencies:
+    lodash "^4.17.4"
+    prop-types "^15.5.10"
 
 react@^17.0.2:
   version "17.0.2"
