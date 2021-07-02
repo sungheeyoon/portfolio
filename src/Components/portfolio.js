@@ -1,15 +1,11 @@
-import { Button, Card, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import styled from "styled-components";
-
+import PortfolioCard from "./portfolioCard";
 const Cards = styled.div`
   display: flex;
   justify-content: center;
 `;
-const BtnPosition = styled.div`
-  position: absolute;
-  right: 6%;
-  bottom: 9%;
-`;
+
 const Portfolio = () => {
   return (
     <>
@@ -27,99 +23,33 @@ const Portfolio = () => {
         </div>
         <div>
           <Cards>
-            <Card style={{ width: "30rem", margin: "40px" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>
-                  Ywitter{" "}
-                  <BtnPosition>
-                    <Button
-                      variant="outline-info"
-                      style={{
-                        fontSize: "12px",
-                        float: "right",
-                      }}
-                    >
-                      Visit Website
-                    </Button>
-                  </BtnPosition>
-                </Card.Title>
-                <Card.Text>Toy project by cloning Twitter</Card.Text>
-              </Card.Body>
-            </Card>
-            <Card style={{ width: "30rem", margin: "40px" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>
-                  Yoonflix
-                  <BtnPosition>
-                    <Button
-                      variant="outline-info"
-                      style={{
-                        fontSize: "12px",
-                        float: "right",
-                      }}
-                    >
-                      Visit Website
-                    </Button>
-                  </BtnPosition>
-                </Card.Title>
-                <Card.Text>
-                  Provides movie and TV show information using The Movie
-                  Database API
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <PortfolioCard
+              img="holder.js/100px180"
+              src="https://sungheeyoon.github.io/ywitter/#/"
+              title="Ywitter"
+              text="Toy project by cloning Twitter"
+            />
+            <PortfolioCard
+              img="holder.js/100px180"
+              src="https://sungheeyoon.github.io/yoonflix/#/"
+              title="Yoonflix"
+              text="Provides movie and TV show information using The Movie
+              Database API"
+            />
           </Cards>
           <Cards>
-            <Card
-              style={{
-                width: "30rem",
-                margin: "40px",
-              }}
-            >
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title style={{ postion: "relative" }}>
-                  Todo-list
-                  <BtnPosition>
-                    <Button
-                      variant="outline-info"
-                      style={{
-                        fontSize: "12px",
-                        float: "right",
-                      }}
-                    >
-                      Visit Website
-                    </Button>
-                  </BtnPosition>
-                </Card.Title>
-
-                <Card.Text>Todo list using Vanilla Javascript</Card.Text>
-              </Card.Body>
-            </Card>
-            <Card style={{ width: "30rem", margin: "40px" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>
-                  Cuptalk
-                  <BtnPosition>
-                    <Button
-                      variant="outline-info"
-                      style={{
-                        fontSize: "12px",
-                        float: "right",
-                      }}
-                    >
-                      Visit Website
-                    </Button>
-                  </BtnPosition>
-                </Card.Title>
-                <Card.Text>
-                  Cuptalk theme applied after KakaoTalk clone
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <PortfolioCard
+              img="holder.js/100px180"
+              src="https://sungheeyoon.github.io/todo-list/"
+              title="Todo-list"
+              text="Todo list using Vanilla Javascript"
+            />
+            <PortfolioCard
+              img="holder.js/100px180"
+              src="https://sungheeyoon.github.io/Cuptalk-2021/"
+              title="Cuptalk"
+              text="Cuptalk theme applied after KakaoTalk clone"
+            />
           </Cards>
         </div>
       </Container>
