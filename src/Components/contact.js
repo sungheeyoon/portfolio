@@ -21,10 +21,9 @@ const ContactBox = styled.div`
 const ContactBoxTitle = styled.h4`
   padding: 7px;
 `;
-const ContactBoxSubTitle = styled.div``;
 const Contact = () => {
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
       <h1 style={{ textAlign: "center" }}>Contact</h1>
       <ContactBoxs>
         <ContactBox>

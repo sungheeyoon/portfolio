@@ -1,4 +1,5 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
+import ScrollComponent from "./ScrollComponent";
 const NavigtionBar = () => {
   return (
     <>
@@ -6,11 +7,14 @@ const NavigtionBar = () => {
         <Container>
           <Navbar.Brand href="#home">Heeyoon</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">HOME</Nav.Link>
-            <Nav.Link href="#features">ABOUT</Nav.Link>
-            <Nav.Link href="#pricing">RESUME</Nav.Link>
-            <Nav.Link href="#pricing">PORTFOLIO</Nav.Link>
-            <Nav.Link href="#pricing">CONTACT</Nav.Link>
+            <ScrollComponent name="HOME" id="home" href="#home" />
+            <ScrollComponent name="ABOUT" id="about" href="#about" />
+            <ScrollComponent
+              name="PORTFOLIO"
+              id="portfolio"
+              href="#portfolio"
+            />
+            <ScrollComponent name="CONTACT" id="contact" href="#contact" />
           </Nav>
         </Container>
       </Navbar>

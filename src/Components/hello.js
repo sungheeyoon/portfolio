@@ -24,7 +24,7 @@ const Hello = () => {
   return (
     <>
       <GlobalStyle />
-      <HomeContainer>
+      <HomeContainer id="home">
         <HeaderTitle>
           Hi There! I'm <Highlight>Jack</Highlight>. <br />
           I'm a Web Developer.

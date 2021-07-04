@@ -67,7 +67,7 @@ const ControlledCarousel = () => {
 };
 const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <AboutTitle>
         <h1>About Me</h1>
         <p>Professional Profile - There Is All About Me</p>
