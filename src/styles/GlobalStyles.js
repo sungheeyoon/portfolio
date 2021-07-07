@@ -1,15 +1,17 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+
      *{
         box-sizing:border-box;
+        font-family: 'Montserrat', sans-serif;
+        
     }
     body{
-        font-family: termina, sans-serif;;
-        font-size:12px;
-    
-    
-        padding-top:50px;
+        background-color: #252934;
+  color: white;
+   
+
     }
 `;
 

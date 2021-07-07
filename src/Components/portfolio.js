@@ -8,7 +8,7 @@ const Cards = styled.div`
 
 const Portfolio = () => {
   return (
-    <Container id="portfolio" style={{ padding: "70px" }}>
+    <Container id="portfolio" style={{ paddingBottom: "70px" }}>
       <div
         style={{
           display: "flex",

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Button } from "react-bootstrap";
-import GlobalStyle from "../styles/GlobalStyles";
 
 const HomeContainer = styled.div`
   background-color: #252934;
@@ -19,11 +18,9 @@ const HeaderTitle = styled.h1`
   font-size: 80px;
   margin-bottom: 40px;
 `;
-
 const Hello = () => {
   return (
     <>
-      <GlobalStyle />
       <HomeContainer id="home">
         <HeaderTitle>
           Hi There! I'm <Highlight>Jack</Highlight>. <br />

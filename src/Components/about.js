@@ -1,13 +1,6 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarDay,
-  faMapMarkerAlt,
-  faPhoneAlt,
-  faEnvelope,
-  faGraduationCap,
-  faStar,
-} from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap, faStar } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { Carousel } from "react-bootstrap";
 import {
@@ -17,25 +10,37 @@ import {
   faJs,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import imgMe from "../img/me.jpg";
+import { width } from "dom-helpers";
 
 const AboutContainer = styled.div`
-  margin: 100px;
   height: 100vh;
   width: 100wh;
-`;
-const AboutTitle = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 100px;
+  position: relative;
+  margin: 0 10%;
+  z-index: -1;
+  background-color: #252934;
+  color: white;
 `;
+
 const IconBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 50px;
 `;
+const VerticalLine = styled.span`
+  border-left: 2px solid white;
+  position: absolute;
+  height: 30%;
+`;
+
+const SmallFont = styled.p`
+  font-size: 15px;
+`;
+
 const ControlledCarousel = () => {
   const [index, setIndex] = useState(0);
 
@@ -46,7 +51,9 @@ const ControlledCarousel = () => {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <div style={{ height: "200px", backgroundColor: "grey" }}></div>
+        <div
+          style={{ height: "300px", width: "500px", backgroundColor: "grey" }}
+        ></div>
         <Carousel.Caption>
           <h5>2016 - 2018</h5>
           <h5>Bachalor - Konkuk University</h5>
@@ -55,7 +62,9 @@ const ControlledCarousel = () => {
       </Carousel.Item>
 
       <Carousel.Item>
-        <div style={{ height: "200px", backgroundColor: "grey" }}></div>
+        <div
+          style={{ height: "300px", width: "00px", backgroundColor: "grey" }}
+        ></div>
         <Carousel.Caption>
           <h5>2012 - 2016</h5>
           <h5>Baekseok Arts University</h5>
@@ -67,107 +76,101 @@ const ControlledCarousel = () => {
 };
 const About = () => {
   return (
-    <AboutContainer id="about">
-      <AboutTitle>
-        <h1>About Me</h1>
-        <p>Professional Profile - There Is All About Me</p>
-      </AboutTitle>
-      {/* image insert*/}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <div style={{ width: "50%" }}>
-          <h3 style={{ textAlign: "center", marginBottom: "20px" }}>
-            I'm Jack
+    <>
+      <AboutContainer id="about">
+        {/* image insert*/}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            height: "100%",
+            width: "55%",
+          }}
+        >
+          <h1 style={{ fontSize: "80px", marginBottom: "20px" }}>
+            Hello !<br />
+          </h1>
+          <h3 style={{}}>
+            My portfolio represents what I have learned and what I want to do.
             <br />
+            <br />I love building websites and getting people's reactions to my
+            website. I also made some sketches to flesh out the concept and
+            immediately jumped into work.
           </h3>
-          <p style={{ fontSize: "20px" }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-            assumenda, voluptas nostrum quasi eaque modi voluptatibus sed enim
-            rem? Itaque veritatis eligendi, magnam doloremque vitae temporibus
-            quae error odit.
-          </p>
-          <p style={{ fontSize: "20px" }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-            assumenda, voluptas nostrum quasi eaque modi voluptatibus sed enim
-            rem? Itaque veritatis eligendi, magnam doloremque vitae temporibus
-            quae error odit.
-          </p>
-          <p style={{ fontSize: "20px" }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-            assumenda, voluptas nostrum quasi eaque modi voluptatibus sed enim
-            rem? Itaque veritatis eligendi, magnam doloremque vitae temporibus
-            quae error odit.
-          </p>
-          <ul>
-            <li>
-              <FontAwesomeIcon icon={faMapMarkerAlt} className="search" />
-              <b>Addres :</b> Inchoen,Korea
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faPhoneAlt} className="search" />
-              <b>Phone :</b> 010-4131-2898
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCalendarDay} className="search" />
-              <b>Date of birth :</b> 17 november 1992
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faEnvelope} className="search" />
-              <b>Email :</b> torushy@gmail.com
-            </li>
-          </ul>
         </div>
-        <div>
-          <div style={{ marginBottom: "100px" }}>
-            <h3>
-              <FontAwesomeIcon icon={faGraduationCap} />
-              EDUCATION
-            </h3>
+        <img
+          src={imgMe}
+          style={{
+            borderRadius: "50%",
+            width: "55%",
+            position: "absolute",
+            top: "-8%",
+            right: "-15%",
+          }}
+          width="50%"
+          height="auto"
+          position="fixed"
+          alt="testA"
+        />
+        <VerticalLine style={{ bottom: "0" }} />
+      </AboutContainer>
 
-            <ControlledCarousel />
-          </div>
+      <AboutContainer id="about">
+        <VerticalLine style={{ top: "-8%" }} />
+        <div
+          style={{
+            position: "absolute",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            width: "100%",
+            top: "15%",
+          }}
+        >
+          <h3>SKILL</h3>
           <div>
-            <h3>
-              <FontAwesomeIcon icon={faStar} />
-              MY SKILLS
-            </h3>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
+            <div style={{ display: "flex", marginRight: "50%" }}>
               <IconBox>
-                <FontAwesomeIcon icon={faHtml5} size={"5x"} color={"grey"} />
-                <p>HTML5</p>
+                <FontAwesomeIcon icon={faHtml5} size={"5x"} color={"white"} />
+                <SmallFont>HTML5</SmallFont>
               </IconBox>
               <IconBox>
-                <FontAwesomeIcon icon={faCss3Alt} size={"5x"} color={"grey"} />
-                <p>CSS3</p>
+                <FontAwesomeIcon icon={faCss3Alt} size={"5x"} color={"white"} />
+                <SmallFont>CSS3</SmallFont>
               </IconBox>
               <IconBox>
-                <FontAwesomeIcon icon={faJs} size={"5x"} color={"grey"} />
-                <p>JavaScript + ES6</p>
+                <FontAwesomeIcon icon={faJs} size={"5x"} color={"white"} />
+                <SmallFont>JS + ES6</SmallFont>
               </IconBox>
               <IconBox>
-                <FontAwesomeIcon icon={faReact} size={"5x"} color={"grey"} />
-                <p>REACT</p>
+                <FontAwesomeIcon icon={faReact} size={"5x"} color={"white"} />
+                <SmallFont>REACT</SmallFont>
               </IconBox>
               <IconBox>
-                <FontAwesomeIcon icon={faGitAlt} size={"5x"} color={"grey"} />
-                <p>GIT</p>
+                <FontAwesomeIcon icon={faGitAlt} size={"5x"} color={"white"} />
+                <SmallFont>GIT</SmallFont>
               </IconBox>
             </div>
           </div>
         </div>
-      </div>
-    </AboutContainer>
+        <VerticalLine style={{ top: "30%" }} />
+        <div
+          style={{
+            position: "absolute",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            width: "100%",
+            top: "48%",
+          }}
+        >
+          <h3>EDUCATION</h3>
+
+          <ControlledCarousel />
+        </div>
+      </AboutContainer>
+    </>
   );
 };
 
