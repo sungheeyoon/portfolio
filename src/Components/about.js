@@ -11,7 +11,6 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import imgMe from "../img/me.jpg";
-import { width } from "dom-helpers";
 
 const AboutContainer = styled.div`
   height: 100vh;
@@ -20,6 +19,15 @@ const AboutContainer = styled.div`
   position: relative;
   margin: 0 10%;
   z-index: -1;
+  background-color: #252934;
+  color: white;
+`;
+const AboutContainerC = styled.div`
+  height: 100vh;
+  width: 100wh;
+  display: flex;
+  position: relative;
+  margin: 0 10%;
   background-color: #252934;
   color: white;
 `;
@@ -49,11 +57,23 @@ const ControlledCarousel = () => {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-        <div
-          style={{ height: "300px", width: "500px", backgroundColor: "grey" }}
-        ></div>
+    <Carousel
+      style={{
+        width: "600px",
+        height: "200px",
+        backgroundColor: "grey",
+        borderRadius: "1%",
+        marginRight: "9%",
+      }}
+      activeIndex={index}
+      onSelect={handleSelect}
+    >
+      <Carousel.Item
+        style={{
+          width: "600px",
+          height: "200px",
+        }}
+      >
         <Carousel.Caption>
           <h5>2016 - 2018</h5>
           <h5>Bachalor - Konkuk University</h5>
@@ -61,10 +81,12 @@ const ControlledCarousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item>
-        <div
-          style={{ height: "300px", width: "00px", backgroundColor: "grey" }}
-        ></div>
+      <Carousel.Item
+        style={{
+          width: "600px",
+          height: "200px",
+        }}
+      >
         <Carousel.Caption>
           <h5>2012 - 2016</h5>
           <h5>Baekseok Arts University</h5>
@@ -116,7 +138,7 @@ const About = () => {
         <VerticalLine style={{ bottom: "0" }} />
       </AboutContainer>
 
-      <AboutContainer id="about">
+      <AboutContainerC id="about">
         <VerticalLine style={{ top: "-8%" }} />
         <div
           style={{
@@ -128,7 +150,7 @@ const About = () => {
             top: "15%",
           }}
         >
-          <h3>SKILL</h3>
+          <h2>SKILL</h2>
           <div>
             <div style={{ display: "flex", marginRight: "50%" }}>
               <IconBox>
@@ -157,19 +179,19 @@ const About = () => {
         <VerticalLine style={{ top: "30%" }} />
         <div
           style={{
+            zIndex: "1",
             position: "absolute",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
             width: "100%",
-            top: "48%",
+            top: "54%",
           }}
         >
-          <h3>EDUCATION</h3>
-
+          <h2>EDUCATION</h2>
           <ControlledCarousel />
         </div>
-      </AboutContainer>
+      </AboutContainerC>
     </>
   );
 };

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from "react-bootstrap";
+import ScrollComponent from "./ScrollComponent";
 
 const HomeContainer = styled.div`
   background-color: #252934;
@@ -12,7 +13,7 @@ const HomeContainer = styled.div`
   align-items: center;
 `;
 const Highlight = styled.span`
-  color: #e31b6d;
+  color: #ffa000;
 `;
 const HeaderTitle = styled.h1`
   font-size: 80px;
@@ -23,13 +24,31 @@ const Hello = () => {
     <>
       <HomeContainer id="home">
         <HeaderTitle>
-          Hi There! I'm <Highlight>Jack</Highlight>. <br />
+          Hi There! <Highlight>I'm Jack.</Highlight> <br />
           I'm a Web Developer.
         </HeaderTitle>
 
-        <Button variant="outline-light" size="lg">
-          View my work
-        </Button>
+        <button
+          type="button"
+          style={{
+            decoration: "none",
+            backgroundColor: "inherit",
+            color: "#94BFF1",
+            outline: "0",
+            borderTop: "0",
+            borderRight: "0",
+            borderLeft: "0",
+            borderBottomColor: "inherit",
+            fontSize: "20px",
+          }}
+        >
+          <ScrollComponent
+            style={{ textDecoration: "none", color: "#94BFF1" }}
+            name="View My Project"
+            id="portfolio"
+            href="#portfolio"
+          />
+        </button>
       </HomeContainer>
     </>
   );

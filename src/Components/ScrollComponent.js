@@ -8,7 +8,7 @@ function ScrollComponent({ name, id, src }) {
         to={id}
         spy={true}
         smooth={true}
-        offset={-155}
+        offset={-50}
         duration={500}
       >
         <Nav.Link href={src}>{name}</Nav.Link>

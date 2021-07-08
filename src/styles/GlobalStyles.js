@@ -13,6 +13,21 @@ const GlobalStyle = createGlobalStyle`
    
 
     }
+    h3{
+        font-weight: 100;
+        opacity: 0.8;
+        color: #FFFFFF;
+    }
+    a:link {
+  color:#94BFF1;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+
+
 `;
 
 export default GlobalStyle;
