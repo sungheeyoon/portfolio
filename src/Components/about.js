@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap, faStar } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { Carousel } from "react-bootstrap";
 import {
@@ -18,7 +17,7 @@ const AboutContainer = styled.div`
   display: flex;
   position: relative;
   margin: 0 10%;
-  z-index: -1;
+
   background-color: #252934;
   color: white;
 `;
@@ -127,10 +126,9 @@ const About = () => {
             borderRadius: "50%",
             width: "55%",
             position: "absolute",
-            top: "-8%",
-            right: "-15%",
+            top: "2%",
+            right: "-14%",
           }}
-          width="50%"
           height="auto"
           position="fixed"
           alt="testA"

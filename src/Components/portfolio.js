@@ -1,57 +1,43 @@
-import { Container } from "react-bootstrap";
 import styled from "styled-components";
-import PortfolioCard from "./portfolioCard";
-const Cards = styled.div`
-  display: flex;
-  justify-content: center;
+import { ywitter, yoonflix, cuptalk, todo } from "../img/images";
+import { LeftTitleProject, RightTitleProject } from "./projects";
+
+const PortfolioContainer = styled.div`
+  width: 100%;
+  margin: 0;
+  padding: 0;
 `;
 
 const Portfolio = () => {
   return (
-    <Container id="portfolio" style={{ paddingBottom: "70px" }}>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}
-      >
-        <h1>Portfolio</h1>
-        <p>See My Works - Lorem ipsum dolor</p>
-      </div>
-      <div>
-        <Cards>
-          <PortfolioCard
-            img="holder.js/100px180"
-            src="https://sungheeyoon.github.io/ywitter/#/"
-            title="Ywitter"
-            text="Toy project by cloning Twitter"
-          />
-          <PortfolioCard
-            img="holder.js/100px180"
-            src="https://sungheeyoon.github.io/yoonflix/#/"
-            title="Yoonflix"
-            text="Provides movie and TV show information using The Movie
-              Database API"
-          />
-        </Cards>
-        <Cards>
-          <PortfolioCard
-            img="holder.js/100px180"
-            src="https://sungheeyoon.github.io/todo-list/"
-            title="Todo-list"
-            text="Todo list using Vanilla Javascript"
-          />
-          <PortfolioCard
-            img="holder.js/100px180"
-            src="https://sungheeyoon.github.io/Cuptalk-2021/"
-            title="Cuptalk"
-            text="Cuptalk theme applied after KakaoTalk clone"
-          />
-        </Cards>
-      </div>
-    </Container>
+    <PortfolioContainer id="portfolio">
+      <LeftTitleProject
+        gitSrc={"https://sungheeyoon.github.io/ywitter/#/"}
+        title={"Ywiteer"}
+        subtitle={"Toy project by cloning Twitter"}
+        imgSrc={ywitter}
+      />
+      <RightTitleProject
+        gitSrc={"https://sungheeyoon.github.io/yoonflix/#/"}
+        title={"Yoonflix"}
+        subtitle={
+          "Provides movie and TV show information using The Movie Database API"
+        }
+        imgSrc={yoonflix}
+      />
+      <LeftTitleProject
+        gitSrc={"https://sungheeyoon.github.io/Cuptalk-2021/"}
+        title={"Cuptalk "}
+        subtitle={"Cuptalk theme applied after KakaoTalk clone"}
+        imgSrc={cuptalk}
+      />
+      <RightTitleProject
+        gitSrc={"https://sungheeyoon.github.io/todo-list/"}
+        title={"Todo-list"}
+        subtitle={"Todo list using Vanilla Javascript"}
+        imgSrc={todo}
+      />
+    </PortfolioContainer>
   );
 };
 

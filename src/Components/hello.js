@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Button } from "react-bootstrap";
 import ScrollComponent from "./ScrollComponent";
 
 const HomeContainer = styled.div`
@@ -38,7 +37,7 @@ const Hello = () => {
             borderTop: "0",
             borderRight: "0",
             borderLeft: "0",
-            borderBottomColor: "inherit",
+            borderBottomColor: "#94BFF1",
             fontSize: "20px",
           }}
         >

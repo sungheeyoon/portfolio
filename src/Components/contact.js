@@ -3,7 +3,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 const ContactContainer = styled.div`
-  height: 84vh;
+  height: 100vh;
   width: 100wh;
   background-color: #252934;
   color: white;
