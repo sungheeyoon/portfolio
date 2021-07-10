@@ -2,7 +2,6 @@ import styled from "styled-components";
 import ScrollComponent from "./ScrollComponent";
 
 const HomeContainer = styled.div`
-  background-color: #252934;
   color: white;
   width: 100vw;
   height: 100vh;
@@ -13,6 +12,7 @@ const HomeContainer = styled.div`
 `;
 const Highlight = styled.span`
   color: #ffa000;
+  font-family: "Krona One", sans-serif;
 `;
 const HeaderTitle = styled.h1`
   font-size: 80px;
@@ -24,8 +24,8 @@ const Hello = () => {
       <HomeContainer id="home">
         <HeaderTitle>
           Hi There! <Highlight>I'm Jack.</Highlight> <br />
-          I'm a Web Developer.
         </HeaderTitle>
+        <HeaderTitle>I'm a Web Developer.</HeaderTitle>
 
         <button
           type="button"

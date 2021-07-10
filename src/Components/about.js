@@ -18,7 +18,6 @@ const AboutContainer = styled.div`
   position: relative;
   margin: 0 10%;
 
-  background-color: #252934;
   color: white;
 `;
 const AboutContainerC = styled.div`
@@ -27,7 +26,7 @@ const AboutContainerC = styled.div`
   display: flex;
   position: relative;
   margin: 0 10%;
-  background-color: #252934;
+
   color: white;
 `;
 
@@ -137,7 +136,7 @@ const About = () => {
       </AboutContainer>
 
       <AboutContainerC id="about">
-        <VerticalLine style={{ top: "-8%" }} />
+        <VerticalLine style={{ top: "-7%" }} />
         <div
           style={{
             position: "absolute",
@@ -145,7 +144,7 @@ const About = () => {
             alignItems: "center",
             justifyContent: "space-between",
             width: "100%",
-            top: "15%",
+            top: "16%",
           }}
         >
           <h2>SKILL</h2>

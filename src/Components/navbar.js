@@ -3,7 +3,7 @@ import ScrollComponent from "./ScrollComponent";
 const NavigtionBar = () => {
   return (
     <>
-      <Navbar fixed="top" bg="dark" variant="dark">
+      <Navbar fixed="top" variant="dark">
         <Container>
           <Navbar.Brand>Heeyoon</Navbar.Brand>
           <Nav className="me-auto">

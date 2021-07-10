@@ -6,6 +6,7 @@ export const LeftTitleProject = ({ gitSrc, title, subtitle, imgSrc }) => {
         display: "flex",
         justifyContent: "flex-end",
         marginBottom: "28px",
+        marginLeft: "5%",
       }}
     >
       <a href={gitSrc} target="_blank" rel="noreferrer">

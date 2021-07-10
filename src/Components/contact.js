@@ -5,7 +5,7 @@ import styled from "styled-components";
 const ContactContainer = styled.div`
   height: 100vh;
   width: 100wh;
-  background-color: #252934;
+
   color: white;
   padding: 70px;
   margin: 0 10%;

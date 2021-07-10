@@ -27,7 +27,7 @@ const Portfolio = () => {
       />
       <LeftTitleProject
         gitSrc={"https://sungheeyoon.github.io/Cuptalk-2021/"}
-        title={"Cuptalk "}
+        title={"Cuptalk"}
         subtitle={"Cuptalk theme applied after KakaoTalk clone"}
         imgSrc={cuptalk}
       />
