@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import ScrollComponent from "./ScrollComponent";
-
+import { Link } from "react-scroll";
+import { Nav } from "react-bootstrap";
 const HomeContainer = styled.div`
   color: white;
   width: 100vw;
@@ -28,31 +28,18 @@ const Hello = () => {
           </HeaderTitle>
           <HeaderTitle>I'm a Web Developer.</HeaderTitle>
         </div>
-        <button
-          type="button"
-          style={{
-            decoration: "none",
-            backgroundColor: "inherit",
-            color: "#94BFF1",
-            outline: "0",
-            borderTop: "0",
-            borderRight: "0",
-            borderLeft: "0",
-            borderBottomColor: "#94BFF1",
-            fontSize: "27px;",
-          }}
-        >
-          <ScrollComponent
-            style={{
-              textDecoration: "none",
-              color: "#94BFF1",
-            }}
-            name="View My Project"
-            id="portfolio"
-            href="#portfolio"
-            className="view"
-          />
-        </button>
+
+        <div style={{ fontSize: "25px", borderBottom: "1px solid #94BFF1" }}>
+          <Link
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            offset={5}
+            duration={500}
+          >
+            <Nav.Link href="#portfolio">View My Project</Nav.Link>
+          </Link>
+        </div>
       </HomeContainer>
     </>
   );

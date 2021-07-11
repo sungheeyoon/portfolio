@@ -115,7 +115,8 @@ const About = () => {
             My portfolio represents what I have learned and what I want to do.
             <br />
             <br />I love building websites and getting people's reactions to my
-            website. I also made some sketches to flesh out the concept and
+            website.
+            <br />I also made some sketches to flesh out the concept and
             immediately jumped into work.
           </h3>
         </div>
