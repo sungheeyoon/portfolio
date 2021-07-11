@@ -3,12 +3,12 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 const ContactContainer = styled.div`
-  height: 100vh;
+  height: 85vh;
   width: 100wh;
 
   color: white;
   padding: 70px;
-  margin: 0 10%;
+  margin: 5% 10%;
 `;
 
 const ContactBoxs = styled.div`

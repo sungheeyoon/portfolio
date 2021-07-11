@@ -22,11 +22,12 @@ const Hello = () => {
   return (
     <>
       <HomeContainer id="home">
-        <HeaderTitle>
-          Hi There! <Highlight>I'm Jack.</Highlight> <br />
-        </HeaderTitle>
-        <HeaderTitle>I'm a Web Developer.</HeaderTitle>
-
+        <div style={{ textAlign: "left" }}>
+          <HeaderTitle>
+            Hi There! <Highlight>I'm Jack.</Highlight> <br />
+          </HeaderTitle>
+          <HeaderTitle>I'm a Web Developer.</HeaderTitle>
+        </div>
         <button
           type="button"
           style={{
@@ -38,14 +39,18 @@ const Hello = () => {
             borderRight: "0",
             borderLeft: "0",
             borderBottomColor: "#94BFF1",
-            fontSize: "20px",
+            fontSize: "27px;",
           }}
         >
           <ScrollComponent
-            style={{ textDecoration: "none", color: "#94BFF1" }}
+            style={{
+              textDecoration: "none",
+              color: "#94BFF1",
+            }}
             name="View My Project"
             id="portfolio"
             href="#portfolio"
+            className="view"
           />
         </button>
       </HomeContainer>

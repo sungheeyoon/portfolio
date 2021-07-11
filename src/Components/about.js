@@ -104,7 +104,7 @@ const About = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            height: "100%",
+
             width: "55%",
           }}
         >
@@ -123,7 +123,7 @@ const About = () => {
           src={imgMe}
           style={{
             borderRadius: "50%",
-            width: "55%",
+            width: "48%",
             position: "absolute",
             top: "2%",
             right: "-14%",
@@ -132,7 +132,7 @@ const About = () => {
           position="fixed"
           alt="testA"
         />
-        <VerticalLine style={{ bottom: "0" }} />
+        <VerticalLine style={{ bottom: "-3%" }} />
       </AboutContainer>
 
       <AboutContainerC id="about">
@@ -144,7 +144,7 @@ const About = () => {
             alignItems: "center",
             justifyContent: "space-between",
             width: "100%",
-            top: "16%",
+            top: "15%",
           }}
         >
           <h2>SKILL</h2>

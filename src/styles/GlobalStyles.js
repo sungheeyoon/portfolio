@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
         box-sizing:border-box;
         //font-family: 'Krona One', sans-serif;
         font-family:"Sf" ;
+        line-height: 200%;
        
         
     }
@@ -26,9 +27,14 @@ const GlobalStyle = createGlobalStyle`
     h1,h2{
         font-family: 'Krona One', sans-serif;
         
+        
+    }
+    h1{
+        letter-spacing: -3px;
     }
     h3{
-        font-weight: 100;
+        font-weight:10;
+        font-size:25px;
         opacity: 0.8;
         color: #FFFFFF;
     }
@@ -36,8 +42,11 @@ const GlobalStyle = createGlobalStyle`
         color:#94BFF1;
         background-color: transparent;
         text-decoration: none;
-  
 
+
+    }
+    .view{
+        font-size: 28px;
     }
 `;
 
