@@ -137,7 +137,7 @@ const About = () => {
       </AboutContainer>
 
       <AboutContainerC id="about">
-        <VerticalLine style={{ top: "-7%" }} />
+        <VerticalLine style={{ top: "-8%" }} />
         <div
           style={{
             position: "absolute",

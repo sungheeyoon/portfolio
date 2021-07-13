@@ -34,6 +34,7 @@ const ProjectTitle = styled.div`
   align-items: start;
   justify-content: center;
   margin: 0 5%;
+  width: 25%;
 `;
 
 export const LeftTitleProject = ({ gitSrc, title, subtitle, imgSrc }) => {
@@ -53,7 +54,7 @@ export const LeftTitleProject = ({ gitSrc, title, subtitle, imgSrc }) => {
             <h3>{subtitle}</h3>
           </ProjectTitle>
 
-          <img style={{ zIndex: "-1", height: "512px" }} src={imgSrc} alt="" />
+          <img style={{ height: "512px", width: "75%" }} src={imgSrc} alt="" />
         </div>
       </LProject>
     </a>
@@ -71,7 +72,7 @@ export const RightTitleProject = ({ gitSrc, title, subtitle, imgSrc }) => {
             width: "100%",
           }}
         >
-          <img style={{ zIndex: "-1", height: "512px" }} src={imgSrc} alt="" />
+          <img style={{ height: "512px", width: "75%" }} src={imgSrc} alt="" />
           <ProjectTitle>
             <h2 style={{ color: "white" }}>{title}</h2>
             <h3>{subtitle}</h3>
