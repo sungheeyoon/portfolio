@@ -137,7 +137,7 @@ const About = () => {
       </AboutContainer>
 
       <AboutContainerC id="about">
-        <VerticalLine style={{ top: "-8%" }} />
+        <VerticalLine style={{ top: "-75px" }} />
         <div
           style={{
             position: "absolute",
@@ -145,7 +145,7 @@ const About = () => {
             alignItems: "center",
             justifyContent: "space-between",
             width: "100%",
-            top: "15%",
+            top: "135px",
           }}
         >
           <h2>SKILL</h2>
@@ -174,7 +174,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <VerticalLine style={{ top: "30%" }} />
+        <VerticalLine style={{ top: "278px" }} />
         <div
           style={{
             zIndex: "1",
@@ -183,7 +183,7 @@ const About = () => {
             alignItems: "center",
             justifyContent: "space-between",
             width: "100%",
-            top: "54%",
+            top: "500px",
           }}
         >
           <h2>EDUCATION</h2>

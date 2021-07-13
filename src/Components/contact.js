@@ -30,7 +30,7 @@ const Contact = () => {
         }}
       >
         <h1 style={{ fontSize: "80px", marginBottom: "40px" }}>Thank you</h1>
-        <h3>if you're interest about me or my projects,</h3>
+        <h3>If you're interest about me or my projects,</h3>
         <h3 style={{ marginBottom: "100px" }}>
           Feel free to contact me with the informaion below.
         </h3>
