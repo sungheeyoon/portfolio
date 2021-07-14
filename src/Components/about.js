@@ -133,11 +133,11 @@ const About = () => {
           position="fixed"
           alt="testA"
         />
-        <VerticalLine style={{ bottom: "0px" }} />
+        <VerticalLine style={{ bottom: "-8px" }} />
       </AboutContainer>
 
       <AboutContainerC id="about">
-        <VerticalLine style={{ top: "-75px" }} />
+        <VerticalLine style={{ top: "-74px" }} />
         <div
           style={{
             position: "absolute",
