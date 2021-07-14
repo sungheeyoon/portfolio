@@ -12,7 +12,7 @@ import {
 import imgMe from "../img/me.jpg";
 
 const AboutContainer = styled.div`
-  height: 100vh;
+  height: 910px;
   width: 100wh;
   display: flex;
   position: relative;
@@ -21,7 +21,7 @@ const AboutContainer = styled.div`
   color: white;
 `;
 const AboutContainerC = styled.div`
-  height: 100vh;
+  height: 910px;
   width: 100wh;
   display: flex;
   position: relative;
@@ -133,7 +133,7 @@ const About = () => {
           position="fixed"
           alt="testA"
         />
-        <VerticalLine style={{ bottom: "-3%" }} />
+        <VerticalLine style={{ bottom: "0px" }} />
       </AboutContainer>
 
       <AboutContainerC id="about">
