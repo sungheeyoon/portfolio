@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ywitter, yoonflix, cuptalk, todo } from "../img/images";
+import { ywitter, yoonflix, cuptalk, todo, airbnb } from "../img/images";
 import { LeftTitleProject, RightTitleProject } from "./projects";
 
 const PortfolioContainer = styled.div`
@@ -11,6 +11,12 @@ const PortfolioContainer = styled.div`
 const Portfolio = () => {
   return (
     <PortfolioContainer id="portfolio">
+      <RightTitleProject
+        gitSrc={"https://airbnb-clone-chi-lime.vercel.app/"}
+        title={"Airbnb-clone"}
+        subtitle={"Tailwind with Next.js"}
+        imgSrc={airbnb}
+      />
       <LeftTitleProject
         gitSrc={"https://sungheeyoon.github.io/ywitter/#/"}
         title={"Ywiteer"}
